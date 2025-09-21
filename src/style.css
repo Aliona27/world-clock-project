@@ -5,8 +5,8 @@ body {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background: #e3f6f5;
-  padding: 30px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 30px 30px 10px;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -14,6 +14,7 @@ h1 {
   text-align: center;
   font-family: sans-serif;
   font-size: 36px;
+  color: #1a2639;
 }
 h2 {
   margin: 0 0 5px;
@@ -24,7 +25,9 @@ select {
   width: 100%;
   padding: 10px;
   font-size: 18px;
+  border: 1px solid #1a2639;
   border-radius: 4px;
+  color: #1a2639;
 }
 .city {
   display: flex;
@@ -32,24 +35,35 @@ select {
   justify-content: space-between;
   padding: 30px 0;
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  color: #1a2639;
 }
 .city:last-child {
   border-bottom: none;
 }
 .date {
+  color: #1a2639;
   opacity: 0.7;
 }
 .time {
   font-size: 48px;
   font-weight: bold;
+  color: #1a2639;
 }
 .time small {
   font-size: 24px;
   line-height: 36px;
   vertical-align: middle;
+  color: #c50000;
+  opacity: 0.6;
 }
 footer {
   text-align: center;
   font-size: 16px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #1a2639;
+  opacity: 0.9;
+}
+a {
+  color: #c50000;
+  opacity: 0.8;
+  font-weight: bold;
 }

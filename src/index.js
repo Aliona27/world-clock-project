@@ -43,6 +43,16 @@ function updateCity(event) {
     cityTimeZone = moment.tz.guess();
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityFlags = {
+    "Los Angeles": "🇺🇸",
+    Dubai: "🇦🇪",
+    Sydney: "🇦🇺",
+    London: "🇬🇧",
+    Kyiv: "🇺🇦",
+  };
+  if (cityFlags[cityName]) {
+    cityName = `${cityName} ${cityFlags[cityName]}`;
+  }
   let cityTime = moment().tz(cityTimeZone);
   let citiesReplaceElement = document.querySelector("#cities");
   citiesReplaceElement.innerHTML = `
